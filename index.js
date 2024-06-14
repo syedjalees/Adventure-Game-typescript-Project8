@@ -69,10 +69,10 @@ do {
                 o1.fuelDecrease();
                 console.log(`${p1.name} fuel is ${p1.fuel}`);
                 console.log(`${o1.name} fuel is ${o1.fuel}`);
-            }
-            else if (o1.fuel <= 0) {
-                console.log("You Win");
-                process.exit();
+                if (o1.fuel <= 0) {
+                    console.log("You Win");
+                    process.exit();
+                }
             }
         }
         else if (ask.opt === "Drink Potion") {
@@ -109,10 +109,10 @@ do {
                 o1.fuelDecrease();
                 console.log(`${p1.name} fuel is ${p1.fuel}`);
                 console.log(`${o1.name} fuel is ${o1.fuel}`);
-            }
-            else if (o1.fuel <= 0) {
-                console.log("You Win");
-                process.exit();
+                if (o1.fuel <= 0) {
+                    console.log("You Win");
+                    process.exit();
+                }
             }
         }
         else if (ask.opt === "Drink Portion") {
@@ -149,10 +149,10 @@ do {
                 o1.fuelDecrease();
                 console.log(`${p1.name} fuel is ${p1.fuel}`);
                 console.log(`${o1.name} fuel is ${o1.fuel}`);
-            }
-            else if (o1.fuel <= 0) {
-                console.log("You Win");
-                process.exit();
+                if (o1.fuel <= 0) {
+                    console.log("You Win");
+                    process.exit();
+                }
             }
         }
         else if (ask.opt === "Drink Portion") {

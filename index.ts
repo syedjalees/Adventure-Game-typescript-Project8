@@ -23,7 +23,7 @@ class Opponent{
         this.name = name;
     }
     fuelDecrease(){
-        let fuel = this.fuel - 25
+        let fuel = this.fuel -25
         this.fuel = fuel
     }
 }
@@ -77,11 +77,11 @@ do{
                 o1.fuelDecrease()
                 console.log(`${p1.name} fuel is ${p1.fuel}`);
                 console.log(`${o1.name} fuel is ${o1.fuel}`);
-            }else if(o1.fuel <= 0){
+            if(o1.fuel <= 0){
                     console.log("You Win");
-                    process.exit()
-                 
+                    process.exit()  
             }
+        }
         }
         else if(ask.opt === "Drink Potion"){
             p1.fuelIncrease()
@@ -121,11 +121,11 @@ do{
                 o1.fuelDecrease()
                 console.log(`${p1.name} fuel is ${p1.fuel}`);
                 console.log(`${o1.name} fuel is ${o1.fuel}`);
-            }else if(o1.fuel <= 0){
+             if(o1.fuel <= 0){
                     console.log("You Win");
                     process.exit()
-                 
             }
+        }
         }
         else if(ask.opt === "Drink Portion"){
             p1.fuelIncrease()
@@ -165,10 +165,10 @@ do{
                 o1.fuelDecrease()
                 console.log(`${p1.name} fuel is ${p1.fuel}`);
                 console.log(`${o1.name} fuel is ${o1.fuel}`);
-            }else if(o1.fuel <= 0){
+            if(o1.fuel <= 0){
                     console.log("You Win");
                     process.exit()
-                 
+            } 
             }
         }
         else if(ask.opt === "Drink Portion"){
